@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+
+  <title>Guest Level</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='bootstrap.css'>
+</head>
+
+<body onload="printEasySudoku()">
+  <!--  bk = background -->
+  <div id="bkMain">
+  <div class="container">
+      <div id="bk2" class="row" >
+      <div class="col-12"><h1>SUDOKU GAME</h1></div>
+        <div class="col-1"></div>
+        <div class="col-2">  <br> <br> <br>
+        </div>
+          
+        
+            <div class="col-6">
+              <!-- Create a 9 * 9 table for the Sudoku game -->
+ <!-- sudoku table  -->
+ <table id="table">
+  <colgroup scope="col" ><col><col><col>
+    <colgroup><col><col><col>
+    <colgroup><col><col><col>
+ <tbody scope="row"></tbody>
+   <tr>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+       </tr>
+        <tr>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+       </tr>
+        <tr>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+       </tr>
+       <tbody></tbody>
+        <tr>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+       </tr>
+        <tr>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+       </tr>
+       <tbody></tbody>
+        <tr>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+       </tr>
+        <tr>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+       </tr>
+        <tr>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+       </tr>
+   </table>
+    
+    </div>
+   
+        <!-- Creates buttons for moving numbers entered into the table -->
+ <div class="col-1" id="bord1">
+          <form class="button_2" id="numchoice" onclick="radioChoice()">
+            <input type="radio" value="1" name="choice"> 1 </br>
+          </br>
+            <input type="radio" value="2" name="choice"> 2 </br>
+          </br>
+            <input type="radio" value="3" name="choice"> 3 </br>
+          </br>
+            <input type="radio" value="4" name="choice"> 4 </br>
+          </br>
+            <input type="radio" value="5" name="choice"> 5 </br>
+          </br>
+            <input type="radio" value="6" name="choice"> 6 </br>
+          </br>
+            <input type="radio" value="7" name="choice"> 7 </br>
+          </br>
+            <input type="radio" value="8" name="choice"> 8 </br>
+          </br>
+            <input type="radio" value="9" name="choice"> 9 </br>
+            <br>
+            <input type="radio" value=" " name="choice">Clear
+            
+          </form>
+        </div>
+        <!-- to close 12 col -->
+        <div class="col-2"></div>
+      <!-- to center nav -->
+  <div class="col-3"></div>  
+  <div class="col-9">
+    <!-- using nav tab to Switch between pages -->
+        <nav>
+        <!-- <a class="button_2"   href="difficulty.html" rel="button_class">More Level</a> -->
+        <a class="button_2" href="user.html" rel="button_class">For more levels</a>
+        <a class="button_2"   href="Guest.html" rel="button_class">Start Over</a>
+        <a class="button_2"  href="index.html" rel="button_class">Main Menu</a>
+        <button id='finish_button' class="button_2"  rel="button_class" onclick="checkSudoku()">Finish</button>
+      </nav>
+      </div>
+      </div>
+  
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <script src='script.js'></script>
+    </div>
+</body>
+</html>
