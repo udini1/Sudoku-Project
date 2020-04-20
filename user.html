@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+
+  <title>USER</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='bootstrap.css'>
+</head>
+
+<body>
+  <!--  bk = background -->
+  <div id="bkMain">
+    
+  <div class="container" >
+  
+ 
+           
+
+      <div id="bk1" class="row">
+        <div class="col-12"><h1>SUDOKU</h1></div>
+        <!-- Switch to Elements Center -->
+        <div class="col-2"></div>
+        <!-- user div -->
+        <div id="user1" class="col-3">
+        <p id="login">Login</p>
+        <div>
+          <input class="button_2" type="text" id="userName" placeholder="Enter username here" /></div>
+        </br>
+        <p id="incorrectName"></p>
+        <input class="button_2" type="password" id="password" placeholder="Enter password here" />
+        </br>
+        <p  id="incorrectPassword"></p>
+        </br>
+        <!-- Create button for user login -->
+        <button class="button_2" id="enter" onclick="login()"> Enter </button>
+      </div>
+      <!-- img  for center user -->
+      <div class="col-2"> <img src="images/user_pic.png" alt=""></div>
+      <div class="col-1"></div>
+        <!-- guest div -->
+      <div id="guest1" class="col-3">
+           <div class="col-3">
+             <!-- using nav tab to Switch between pages -->
+          <nav>
+          <div class="button_1" ><a class="button_2" href="Guest.html" rel="button_class" onclick="printEasySudoku()">Guest Enter</a></div>
+              <br>
+                        <div class="button_1" ><a class="button_2" href="index.html" rel="button_class">Main Menu</a></div>
+      </nav>
+      </div>
+
+          
+        
+      </div>
+      </div>
+   
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <script src='script.js'></script>
+    </div>
+</body>
+
+
+</html>
